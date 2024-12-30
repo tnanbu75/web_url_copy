@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Title and URL",
+  "version": "1.0",
+  "description": "Copy page title and URL with one click",
+  "permissions": ["activeTab", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+} 
