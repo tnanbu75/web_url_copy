@@ -2,8 +2,16 @@
   "manifest_version": 3,
   "name": "Copy Title and URL",
   "version": "1.0",
-  "description": "Copy page title and URL with one click",
-  "permissions": ["activeTab", "clipboardWrite"],
+  "description": "Copy page title and URL with right click",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "contextMenus",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html"
   }
